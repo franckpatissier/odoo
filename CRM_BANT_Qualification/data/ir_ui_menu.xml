@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+  <record id="crm_bant_4856f094-29ee-4b2f-8390-41ba9ad8347c" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="bant_6f9029ca-bb79-400a-866f-05c4011dfcd7"/>
+    <field name="name">BANT</field>
+    <field name="parent_id" ref="crm.crm_menu_config"/>
+    <field name="sequence">6</field>
+  </record>
+</odoo>

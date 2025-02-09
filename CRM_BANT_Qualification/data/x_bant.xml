@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+  <record id="x_bant_1" model="x_bant">
+    <field name="x_name">Budget</field>
+    <field name="display_name">Budget</field>
+    <field name="x_color">3</field>
+  </record>
+  <record id="x_bant_2" model="x_bant">
+    <field name="x_name">Authority</field>
+    <field name="display_name">Authority</field>
+    <field name="x_color">8</field>
+  </record>
+  <record id="x_bant_3" model="x_bant">
+    <field name="x_name">Need</field>
+    <field name="display_name">Need</field>
+    <field name="x_color">11</field>
+  </record>
+  <record id="x_bant_4" model="x_bant">
+    <field name="x_name">Timing</field>
+    <field name="display_name">Timing</field>
+    <field name="x_color">2</field>
+  </record>
+</odoo>

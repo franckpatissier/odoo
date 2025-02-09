@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+  <record id="bant_6f9029ca-bb79-400a-866f-05c4011dfcd7" model="ir.actions.act_window" context="{'studio': True}">
+    <field name="help"><![CDATA[<p class="o_view_nocontent_smiling_face">
+                    Voici votre nouvelle action.
+                </p>
+                <p>Par défaut, elle contient une vue liste et formulaire et éventuellement d'autres types de vues en fonction des options choisies pour votre modèle.
+                </p>
+                <p>
+                    Vous pouvez commencer à personnaliser ces écrans en cliquant sur l'icône Studio en haut à droite
+(vous pourrez également personnaliser ce message d'aide).
+                </p>
+            ]]></field>
+    <field name="name">BANT</field>
+    <field name="res_model">x_bant</field>
+  </record>
+</odoo>

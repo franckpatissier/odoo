@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+  <record id="actif_bant_539e97a8-4739-4505-a5c6-a977db89160f" model="ir.default" context="{'studio': True}">
+    <field name="field_id" ref="actif_bant_bea3925a-87a3-4a67-9ef4-5b9c76634935"/>
+    <field name="json_value">true</field>
+  </record>
+</odoo>

@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+  <record id="default_list_view_fo_0963339f-6e15-49b4-93d5-4ff979a02d99" model="ir.ui.view" context="{'studio': True}">
+    <field name="arch" type="xml">
+      <list>
+        <field name="x_name"/>
+      </list>
+    </field>
+    <field name="model">x_bant</field>
+    <field name="name">Default list view for x_bant</field>
+    <field name="type">list</field>
+  </record>
+  <record id="default_form_view_fo_8f0e734d-578c-4d0b-8ae1-e130a0043137" model="ir.ui.view" context="{'studio': True}">
+    <field name="arch" type="xml">
+      <form>
+        <header/>
+        <sheet string="BANT">
+          <widget name="web_ribbon" text="Archivé" bg_color="text-bg-danger" invisible="x_active"/>
+          <field name="x_active" invisible="1"/>
+          <div class="oe_title">
+            <h1>
+              <field name="x_name" required="1" placeholder="Name..."/>
+            </h1>
+          </div>
+          <group name="studio_group_39ff1f">
+            <group name="studio_group_39ff1f_left"/>
+            <group name="studio_group_39ff1f_right"/>
+          </group>
+        </sheet>
+      </form>
+    </field>
+    <field name="model">x_bant</field>
+    <field name="name">Default form view for x_bant</field>
+    <field name="type">form</field>
+  </record>
+  <record id="default_search_view__9d77feda-6da9-422e-82b1-e060379c9d04" model="ir.ui.view" context="{'studio': True}">
+    <field name="arch" type="xml">
+      <search>
+        <field name="x_name"/>
+        <separator/>
+        <filter string="Archivé" name="archived_x_bant" domain="[['x_active', '=', False]]"/>
+        <separator/>
+      </search>
+    </field>
+    <field name="model">x_bant</field>
+    <field name="name">Default search view for x_bant</field>
+    <field name="type">search</field>
+  </record>
+  <record id="odoo_studio_crm_lead_72f40c1d-c325-4b37-849e-66a267faa5d7" model="ir.ui.view" context="{'studio': True}">
+    <field name="arch" type="xml">
+      <data>
+        <xpath expr="//form[1]/sheet[1]/group[1]/group[not(@name)][1]/field[@name='tag_ids']" position="after">
+          <field widget="many2many_tags" name="x_studio_bant" help="The BANT method is a sales framework used to qualify a prospect and assess their potential to purchase. It is based on four key criteria:  Budget – Does the prospect have the necessary budget to buy your solution? Authority – Is the person you're speaking with a decision-maker, or do you need to involve someone else? Need – Does the prospect have a genuine need that your solution can address? Timing – What is the urgency of the project? When does the prospect plan to make a purchase?" options="{&quot;color_field&quot;: &quot;x_color&quot;, &quot;no_create&quot;: true}"/>
+        </xpath>
+      </data>
+    </field>
+    <field name="inherit_id" ref="crm.crm_lead_view_form"/>
+    <field name="mode">extension</field>
+    <field name="model">crm.lead</field>
+    <field name="name">Odoo Studio: crm.lead.form customization</field>
+    <field name="priority">160</field>
+    <field name="type">form</field>
+  </record>
+  <record id="odoo_studio_default__24641367-d861-4adf-8c30-a1ec7b3469b9" model="ir.ui.view" context="{'studio': True}">
+    <field name="arch" type="xml">
+      <data>
+        <xpath expr="//group[@name='studio_group_39ff1f_left']" position="inside">
+          <field name="x_color" widget="color_picker"/>
+        </xpath>
+      </data>
+    </field>
+    <field name="inherit_id" ref="default_form_view_fo_8f0e734d-578c-4d0b-8ae1-e130a0043137"/>
+    <field name="mode">extension</field>
+    <field name="model">x_bant</field>
+    <field name="name">Odoo Studio: Default form view for x_bant customization</field>
+    <field name="priority">99</field>
+    <field name="type">form</field>
+  </record>
+</odoo>
