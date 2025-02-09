@@ -26,5 +26,5 @@ Enhance your CRM with a structured BANT qualification field. Easily assess prosp
         'data/x_bant.xml',
     ],
     'license': 'OPL-1',
-    'images': ['static/description/cover.png'],
+    'images': ['static/description/cover.gif'],
 }
