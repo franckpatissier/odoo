@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+  <record id="bant_group_system_d5795f76-7544-4614-a31e-252c4194c9ca" model="ir.model.access" context="{'studio': True}">
+    <field name="group_id" ref="base.group_system"/>
+    <field name="model_id" ref="bant_75b04ab2-30a4-4755-ac9a-0e0f921fa002"/>
+    <field name="name">BANT group_system</field>
+    <field name="perm_create" eval="True"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_unlink" eval="True"/>
+    <field name="perm_write" eval="True"/>
+  </record>
+  <record id="bant_group_user_d6895a11-53ee-4313-94ca-46f3760fcb81" model="ir.model.access" context="{'studio': True}">
+    <field name="group_id" ref="base.group_user"/>
+    <field name="model_id" ref="bant_75b04ab2-30a4-4755-ac9a-0e0f921fa002"/>
+    <field name="name">BANT group_user</field>
+    <field name="perm_create" eval="True"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_write" eval="True"/>
+  </record>
+</odoo>
